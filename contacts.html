@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIXET | DESIGN AND DEVELOPER</title>
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+        <script src="./js/skill.js"></script>
+
+</head>
+
+
+<body>
+    
+
+    <!-- 1. ГЛААВНАЯ -->
+<header>
+    <div class="nav-container">
+            <!-- 1.1 лого -->
+        <div class="logo">
+            <a href="#"><img src="./img/diamond.svg" alt=""></a>
+        </div>
+            <!-- 1.2 МЕНЮ -->
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                <li><a href="./about.html">АНКЕТА</a></li>
+                <li><a href="./home.html">ПРОЦЕСС</a></li>
+                <li><a href="./project.html">ПРОЕКТЫ</a></li>
+                <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- форма с адресом -->
+<div class="container">
+    <div class="contact-info">
+        <h1>Контактная информация:</h1>
+            <p id="r1">Чтобы найти нас потребуется достаточно времени провести в интернете, но не волнуйтесь, тут ваш ждет удивительное приключение в мир яндекс карт. 
+            Чтобы найти нас потребуется достаточно времени провести в интернете, но не волнуйтесь, 
+            тут ваш ждет удивительное приключение в мир яндекс карт.</p>
+            <p id="r2"><b>Адрес:</b> Москва, ул. Пушкина, д. 10 кв 1111</p>
+            <p id="r3"><b>Телефон:</b> +7-(999)-999-99-99</p>
+            <p id="r4"><b>Почта:</b> gggggggg@mail.ru</p>
+            <p id="r5"><b>Факс:</b> +44-(222)-211-11-22</p>
+    </div>
+
+    <div class="message-form">
+        <form action="" method="get">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="row1-form">
+                            <div id="input-start">
+                                <input type="text" name="username" placeholder="Имя..." maxlength="15" required>
+                                <input type="email" name="email" placeholder="Ваша почта..." maxlength="25" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="row2-title">
+                            <input type="text" name="title" placeholder="Причина..." maxlength="50" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="row2-comment">
+                            <textarea  rows="10"  maxlength="350" name="comment-project" placeholder="Ваше сообщение..."></textarea>
+                        </td>       
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" value="Отправить">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+<!-- фрейм карты -->
+<div class="map">
+    
+    <a id="map-one" href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps">Москва</a>
+    <a id="map-two" href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/zapadnaya_ulitsa_10/Z04YdQFhSEwEQFtvfXtxeXtjbQ==/?ll=37.355942%2C55.697553&utm_medium=mapframe&utm_source=maps&z=14.86">Западная улица, 10 — Яндекс Карты</a>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCURNYDNlC" width="1500" height="800" frameborder="1" allowfullscreen="true"></iframe>
+    
+</div>
+
+<!-- подвал -->
+<footer>
+    <div id="foo-container">
+        <div id="foo-company">
+            <ul>
+                <li><span>TixeT Design, Inc.</span></li>
+                <li><p>&#169; 2017 TixeT. All right reserved. <br>
+                    Designed by Me.</p></li>
+            </ul>
+        </div>
+            <div id="foo-contacts">
+                <ul>
+                    <li><p>doublebouble@gmail.com</p></li>
+                    <li><p>+7-(888)-999-22-22</p></li>
+                </ul>
+            </div>
+                <div id="foo-li-one">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="./about.html">Анкета</a></li>
+                        <li><a href="./project.html">Проекты</a></li>
+                        <li><a href="./home.html">Процесс</a></li>
+                    </ul>
+                </div>
+                    <div id="foo-li-two">
+                        <ul>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Telegram</a></li>
+                        </ul>
+                    </div>
+    </div>
+</footer>
+
+</body>
+</html>

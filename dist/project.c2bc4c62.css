@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f5f5f5;
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  height: 80px;
+  background-color: #fff;
+}
+
+.wrapper {
+  height: 100px;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  margin: 10px;
+  padding-left: 50px;
+  position: absolute;
+}
+
+.menu {
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  width: 1810px;
+  text-align: right;
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+.menu li {
+  font-size: 15px;
+  list-style-type: none;
+  display: inline;
+}
+
+.menu a {
+  color: #191b1a;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #10c9c3;
+  border-bottom: 2px solid #10c9c3;
+}
+
+.container img {
+  width: 850px;
+  height: 700px;
+  float: left;
+}
+
+.container {
+  max-width: 1700px;
+  background: #f5f5f5;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.btn-slider {
+  height: 50px;
+  flex-direction: column;
+  margin: 20px;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: none;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  display: flex;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #10c9c3;
+}
+
+button:active {
+  color: #f5f5f5;
+  background: #000;
+}
+
+.slider-next {
+  position: absolute;
+  right: 130px;
+}
+
+.slider-next button img {
+  width: 48px;
+  height: 48px;
+}
+
+.slider-prev {
+  flex-direction: row;
+  display: flex;
+}
+
+.slider-prev button img {
+  width: 48px;
+  height: 48px;
+}
+
+.slider-prev a {
+  padding-left: 465px;
+}
+
+.slider-prev a img {
+  width: 48px;
+  height: 48px;
+}
+
+.slider {
+  width: 1700px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slider-line {
+  height: 700px;
+  width: 5400px;
+  transition: all 1s;
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+.slider-line #slide {
+  width: 850px;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+}
+
+.slider-line #slide p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+#slide #client {
+  padding-top: 30px;
+}
+
+#slide #date {
+  padding-top: 20px;
+}
+
+.slider-line #slide h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.sliders-all-one {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #09413fcc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__allclose {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  display: flex;
+}
+
+.popup__content {
+  color: #000;
+  max-width: 800px;
+  background-color: #f0f8ff;
+  padding: 30px;
+  transition: all .6s;
+  position: relative;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.popup__close img {
+  width: 50px;
+  height: 50px;
+}
+
+.popup__title {
+  margin: 0 0 1em;
+  font-size: 40px;
+}
+
+#slide {
+  margin-bottom: 10px;
+}
+
+.sliders-all-two {
+  border-bottom: 1px solid #141414;
+  flex-direction: column;
+  margin: 20px 0;
+  display: flex;
+}
+
+.sliders-all-two img {
+  padding-left: 50px;
+}
+
+.popup__text {
+  flex-flow: column wrap;
+  display: flex;
+}
+
+.popup__text img {
+  width: 700px;
+  height: 700px;
+}
+
+footer {
+  color: #f5f5f5;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+  margin: 0 auto;
+}
+
+#foo-container {
+  width: 1800px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+
+footer #foo-company span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#foo-company {
+  padding-top: 10px;
+}
+
+#foo-company p {
+  width: 700px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+#foo-contacts {
+  font-size: 20px;
+}
+
+#foo-contacts li {
+  padding: 10px;
+}
+
+#foo-li-one li, #foo-li-two li {
+  width: 345px;
+  text-align: right;
+  padding: 10px;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer a:hover {
+  color: #10c9c3;
+  border-bottom: 2px solid #07fff7;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=project.c2bc4c62.css.map */

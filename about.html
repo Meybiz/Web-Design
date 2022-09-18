@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIXET | DESIGN AND DEVELOPER</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+        <script src="./js/skill.js"></script>
+        
+
+</head>
+
+<body>
+
+    <!-- Верх сайта -->
+<header>
+        
+    <div class="nav-container">
+                <!-- 1.1 лого -->
+        <div class="logo">
+                <a href="#"><img src="./img/diamond.svg" alt=""></a>
+        </div>
+            
+                <!-- 1.2 МЕНЮ -->
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="#">АНКЕТА</a></li>
+                    <li><a href="./home.html">ПРОЦЕСС</a></li>
+                    <li><a href="./project.html">ПРОЕКТЫ</a></li>
+                    <li><a href="#">ПОДДЕРЖКА</a></li>
+                    <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        </header>
+<!-- Лицо -->
+        <div class="head-container">
+            <div class="name-info">
+                <h1>Виктор Перерва</h1>
+                    <p> Я являюсь Front разаюотчиком и Веб дизайнером из Москвы, 
+                        специализируюсь на языках JavaScript, Python, PhP в веб индустрии.</p>
+            </div>
+        </div>
+        <!-- иконки скилов  -->
+        <div class="skill-info">
+                            <div class="about-icon">
+                                    <img src="./img/portfolio.svg" alt="">
+                                <p>Более 100 завершенных проектов</p>
+                                    <img src="./img/clock.svg" alt="">
+                                <p>2000+ рабочих часов</p>
+                                    <img src="./img/star.svg" alt="">
+                                <p>90% положительных отзывов</p>
+                                    <img src="./img/like.svg" alt="">
+                                <p>Свыше 1000 довольных заказчиков</p>
+                            </div>
+                    </div>
+                    <!-- немного о себе -->
+        <div class="about-container">
+            <img src="./img/about/about.jpg" alt="#">
+            <div class="about-text-container">
+                <div class="text-about">
+                    <h2>Обо мне</h2>
+                    <p>Но разбавленное изрядной долей эмпатии, рациональное мышление прекрасно подходит для реализации 
+                        направлений прогрессивного развития. Прежде всего, перспективное планирование требует анализа
+                        приоретизации разума над эмоциями. <br> <br>
+                        В своём стремлении повысить качество жизни, они забывают,что новая модель организационной деятельности не даёт нам иного выбора, кроме определения позиций,
+                        занимаемых участниками в отношении поставленных задач.</p>
+                        <img src="./img/about/Signature_of_Gennadiy_Aigui.svg" alt="#">
+                </div>
+            </div>
+        </div>
+        <!-- форма заказа -->
+        <div class="form-container">
+            <div class="form-about">
+                <h2>Нужен проект?</h2>
+                <p>Тогда быстрее нажимай на нужную кнопку, пиши свое задание,
+                    присылай файлы и мы выполним всё по высшему разряду в короткие сроки.</p>
+                <a href="#popup" id="form-pop" class="form-info"><input id="in-pop" type="button" value="Заказать"></a>
+            </div>
+        </div>
+        <!-- подвал -->
+        <footer>
+            <div id="foo-container">
+                <div id="foo-company">
+                    <ul>
+                        <li><span>TixeT Design, Inc.</span></li>
+                        <li><p>&#169; 2017 TixeT. All right reserved. <br>
+                                        Designed by Me.</p></li>
+                    </ul>
+                </div>
+                    <div id="foo-contacts">
+                        <ul>
+                            <li><p>doublebouble@gmail.com</p></li>
+                            <li><p>+7-(888)-999-22-22</p></li>
+                        </ul>
+                    </div>
+                        <div id="foo-li-one">
+                            <ul>
+                                <li><a href="./index.html">Главная</a></li>
+                                <li><a href="#">Анкета</a></li>
+                                <li><a href="./project.html">Проекты</a></li>
+                                <li><a href="./home.html">Процесс</a></li>
+                            </ul>
+                        </div>
+                            <div id="foo-li-two">
+                                <ul>
+                                    <li><a href="#">Поддержка</a></li>
+                                    <li><a href="./contacts.html">Контакты</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Telegram</a></li>
+                                </ul>
+                            </div>
+            </div>
+        </footer>
+        <!-- модальное окно -->
+        <div id="popup" class="popup"> <!-- контейнер попап -->
+            <a href="#header" class="popup__allclose"></a><!--  закрывающая ссылка -->
+            <div class="popup__body"> <!-- тело окна -->
+                <div class="popup__content"><!-- контент окна -->
+                    <a href="#header" class="popup__close"><img src="./img/close.svg" alt="#"></a>
+                    <form action="" method="get">
+                        <table>
+                            <caption>Нужен проект?</caption>
+                            <tbody>
+                                <tr>
+                                    <td id="form-text"><p>Заполните форму Заполните форму Заполните форму Заполните форму ниже для заказача индивидуального проекта. И вам обязательно перезвонят. Ну или нет.</p></td>
+                                </tr>
+                                <tr>
+                                    <td id="row1-form">
+                                        <div id="input-start">
+                                        <input type="text" name="username" placeholder="Имя..." maxlength="15" required>
+                                        <input type="email" name="email" placeholder="Ваша почта..." maxlength="25" required>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="row2-title">
+                                        <input type="text" name="title" placeholder="Название проекта..." maxlength="50" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="row2-comment"><textarea  rows="10"  maxlength="350" name="comment-project" placeholder="Описание проекта..."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="submit" name="submit" value="Отправить">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

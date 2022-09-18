@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f5f5f5;
+  font-family: Montserrat, sans-serif;
+}
+
+.nav-container {
+  height: 100px;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  margin: 10px;
+  position: absolute;
+}
+
+.menu {
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  width: 1750px;
+  text-align: right;
+  margin: 10px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.menu li {
+  font-size: 15px;
+  list-style-type: none;
+  display: inline;
+}
+
+.menu a {
+  color: #191b1a;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #10c9c3;
+  border-bottom: 2px solid #10c9c3;
+}
+
+.head-container {
+  height: 600px;
+  background: url("420.a3489410.jpg") center / cover no-repeat;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.head-container:after {
+  content: "";
+  z-index: 2;
+  background: #00000080;
+  position: absolute;
+  inset: 0;
+}
+
+.name-info {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  width: 1200px;
+  padding-top: 200px;
+  position: relative;
+}
+
+.name-info h1 {
+  letter-spacing: 2px;
+  text-shadow: 2px 1px #000;
+  font-size: 40px;
+}
+
+.name-info p {
+  letter-spacing: 2px;
+  text-shadow: 2px 1px #000;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.about-icon {
+  height: 255px;
+  letter-spacing: 5px;
+  background-color: #10c9c3;
+  flex-flow: row;
+  align-items: center;
+  padding: 0 50px;
+  font-size: 20px;
+  display: flex;
+}
+
+.about-icon img {
+  width: 100px;
+}
+
+.about-container {
+  height: 800px;
+  flex-flow: row;
+  display: flex;
+}
+
+.about-container img {
+  width: 900px;
+}
+
+.about-text-container {
+  width: 100%;
+  background-color: #dddddb;
+  flex-direction: column;
+  place-content: center;
+  display: flex;
+  position: relative;
+}
+
+.text-about {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.text-about h2 {
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.text-about p {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: 20px;
+}
+
+.text-about img {
+  width: 200px;
+  height: 100px;
+  padding-top: 100px;
+}
+
+.form-container {
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.form-about {
+  width: 1000px;
+}
+
+.form-about h2 {
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.form-about p {
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-about a input {
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #10c9c3;
+  border: none;
+  margin: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-about a input:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #07fff7;
+  transition: all .2s;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #09413fcc;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+.popup__allclose {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+}
+
+.popup__content {
+  color: #000;
+  max-width: 900px;
+  background-color: #f0f8ff;
+  padding: 30px;
+  transition: all .8s;
+  position: relative;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.popup__close img {
+  width: 50px;
+  height: 50px;
+}
+
+.popup__title {
+  margin: 0 0 1em;
+  font-size: 40px;
+}
+
+form {
+  width: 800px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  letter-spacing: 3px;
+  margin: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#form-text {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+table .in-1 {
+  width: 200px;
+  font-size: 20px;
+}
+
+table #input-start {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+input[name="username"], input[name="email"] {
+  width: 350px;
+  height: 45px;
+  border: none;
+  outline: none;
+  margin: 0 20px 0 0;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+}
+
+input:hover {
+  cursor: text;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px #10c9c3;
+}
+
+input[name="email"] {
+  margin: 0;
+}
+
+input[name="title"] {
+  width: 740px;
+  height: 55px;
+  border: none;
+  outline: none;
+  margin: 20px 0 0;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  display: block;
+}
+
+form textarea {
+  width: 740px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+}
+
+form textarea:hover {
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 20px #10c9c3;
+}
+
+input[type="submit"] {
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  background-color: #10c9c3;
+  border: none;
+  margin: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #07fff7;
+  transition: all .1s;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: #0000;
+}
+
+footer {
+  color: #f5f5f5;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+  margin: 0 auto;
+}
+
+#foo-container {
+  width: 1800px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+
+footer #foo-company span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#foo-company {
+  padding-top: 10px;
+}
+
+#foo-company p {
+  width: 700px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+#foo-contacts {
+  font-size: 20px;
+}
+
+#foo-contacts li {
+  padding: 10px;
+}
+
+#foo-li-one li, #foo-li-two li {
+  width: 345px;
+  text-align: right;
+  padding: 10px;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer a:hover {
+  color: #10c9c3;
+  border-bottom: 2px solid #07fff7;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=about.f04df894.css.map */

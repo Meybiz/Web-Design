@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+        
+        background-color: whitesmoke;
+}
+
+
+header {
+    background-color: white;
+    height: 80px;
+}
+/* 1.1 настройка флекса и лого */
+.wrapper {
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+        padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo img {
+    width: 50px;
+    position: absolute;
+    margin: 10px;
+    padding-left: 50px;
+}
+/* 1.2 меню */
+.menu {
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    width: 1810px;
+    text-align: right;
+    font-weight: 700;
+    padding-top: 30px;
+    /* margin-right: 30px; */
+    
+}
+.menu li {
+    list-style-type: none;
+    display: inline;
+    font-size: 15px;
+}
+
+.menu a{
+    color: rgb(25, 27, 26);
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    color: rgb(16, 201, 195);
+    border-bottom: 2px solid #10c9c3;
+}
+ /* контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 1800px;
+    
+}
+/* кнонтакты */
+.container .contact-info {
+    width: 700px;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.contact-info h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.contact-info #r1 {
+    font-size: 20px;
+    padding-top: 50px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+.contact-info #r2 {
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.contact-info #r3 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.contact-info #r4 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.contact-info #r5 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+ /* форма заполнения */
+form {
+    width: 700px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px
+}
+
+#form-text{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+table .in-1 {
+    font-size: 20px;
+    width: 200px;
+}
+
+table #input-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[name="username"], input[name="email"] {
+    width: 350px;
+    height: 45px;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+input:hover {
+    box-shadow: 2px 2px 10px #10c9c3;
+    cursor: text;
+    outline: none;
+    border:none;
+}
+
+input[name="email"] {
+    margin: 0;
+}
+
+input[name="title"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 740px;
+    height: 55px;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+form textarea {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    width: 740px;
+    outline: none;
+    border: none;
+}
+
+form textarea:hover {
+    box-shadow: 2px 2px 20px #10c9c3;
+    outline: none;
+    border:none;
+}
+
+input[type="submit"] {
+    background-color: #10c9c3;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    margin: 20px;
+} 
+
+input[type="submit"]:hover {
+    border-bottom: 3px solid #07fff7;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+/* стили отображения точки карты */
+.map {
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    
+}
+
+.map #map-one {
+    color:#eee;
+    font-size:12px;
+    position:absolute;
+    top:0px;
+}
+
+.map #map-two {
+    color:#eee;
+    font-size:12px;
+    position:absolute;
+    top:14px;
+}
+/* позиция фрейма */
+.map iframe {
+    position:relative;
+    margin: 0 auto;
+}
+/* подвал */
+footer {
+    background-color: #141414;
+    color: whitesmoke;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+#foo-container {
+    width: 1800px;
+    margin: 0px auto;
+}
+
+#foo-container {
+    display: flex;
+    justify-content: center; 
+    padding: 50px; 
+    align-items: center; 
+    height: 200px;
+    
+} 
+
+footer #foo-company span {
+    font-weight: 700;
+    font-size: 20px;
+    
+    
+} 
+
+#foo-company {
+    padding-top: 10px;
+    
+}
+
+#foo-company p {
+    font-size: 15px;
+    width: 700px;
+    padding-top: 10px;
+} 
+
+#foo-contacts {
+    font-size: 20px;
+    
+}
+#foo-contacts li {
+    padding: 10px;
+} 
+
+#foo-li-one li, #foo-li-two li{
+    padding: 10px;
+    width: 345px;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    list-style-type: none;
+} 
+
+footer a:hover {
+    border-bottom: 2px solid #07fff7;
+    color: #10c9c3;
+}
+
+footer li {
+    list-style-type: none;
+} 
